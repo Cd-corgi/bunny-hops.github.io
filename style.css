@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    display: flex;
+}
+
+.modal-container {
+    background-color: #C4C4C4;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    margin: auto;
+    border-radius: 1rem;
+    text-align: center;
+    overflow: hidden;
+    padding: 2.5em 1.5em;
+
+    animation-name: op;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+.modal-picture {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 2em;
+}
+
+.modal-img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+
+    animation-name: sc;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+.modal-title {
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+@media (min-width:600px) {
+    .modal-title {
+        font-size: 3rem;
+    }
+    .modal-par {
+        font-size: 1.2rem;
+    }
+}
+
+@keyframes op {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes sc {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
